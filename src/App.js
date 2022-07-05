@@ -26,6 +26,12 @@ const INITIAL_EXPENSES = [
     amount: 1500,
     date: new Date(2022, 2, 3),
   },
+  {
+    id: "e5",
+    title: "House purchased",
+    amount: 100000,
+    date: new Date(2021, 2, 3),
+  },
 ];
 const App = () => {
   const [expenses, setExpenses] = useState(INITIAL_EXPENSES);
