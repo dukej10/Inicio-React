@@ -19,6 +19,9 @@ const Expenses = (props) => {
       />
       {props.items.map((expense) => (
         <ExpenseItem
+          key={
+            expense.id
+          } /* Identificador para poder saber el orden para agregarlo al componente*/
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
