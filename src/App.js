@@ -36,8 +36,11 @@ const App = () => {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <NewExpense onAddExpense={addExpense} /> // Se manda una función para
-      guardar datos
+      {
+        <NewExpense
+          onAddExpense={addExpense}
+        /> /*Se manda una función para  guardar datos*/
+      }
       <Expenses items={expenses} />
     </div>
   );

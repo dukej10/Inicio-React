@@ -11,8 +11,11 @@ const NewExpense = (props) => {
   };
   return (
     <div className="new-expense">
-      <ExpenseForm onSaveExponseData={saveExpenseDataHandler} /> // se pasa una
-      función para guardar datos función
+      {
+        <ExpenseForm
+          onSaveExponseData={saveExpenseDataHandler}
+        /> /*se pasa una función para guardar datos función */
+      }
     </div>
   );
 };
