@@ -21,7 +21,7 @@ const Expenses = (props) => {
         <ExpenseItem
           key={
             expense.id
-          } /* Identificador para poder saber el orden para agregarlo al componente*/
+          } /* Identificador único para poder saber el orden para agregarlo al componente*/
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
